@@ -1,0 +1,95 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
+
+/* Brand tokens — unique names that don't conflict with shadcn's semantic system */
+@theme {
+  --color-blue: #4A70C2;
+  --color-blue-dark: #3558a8;
+  --color-blue-light: #7093d4;
+  --color-blue-pale: #eef3fc;
+  --color-blue-soft: rgba(74, 112, 194, 0.10);
+
+  --color-red: #FF6161;
+  --color-red-dark: #e04444;
+  --color-red-soft: rgba(255, 97, 97, 0.09);
+
+  --color-black: #1B1B1B;
+  --color-mid: #4a4a4a;
+  --color-cream: #f8f7f4;
+  --color-warm-white: #fdfcfa;
+  --color-border-b: rgba(74, 112, 194, 0.18);
+
+  --shadow-blue: 0 4px 16px rgba(74, 112, 194, 0.26);
+  --shadow-sm: 0 8px 24px rgba(27, 27, 27, 0.07);
+  --shadow-md: 0 12px 32px rgba(27, 27, 27, 0.08);
+}
+
+/* shadcn semantic tokens — resolved via :root below */
+@theme inline {
+  --font-heading: var(--font-sans);
+  --font-sans: var(--font-sans);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+  --radius-4xl: calc(var(--radius) * 2.6);
+}
+
+/* Brand values mapped to shadcn's semantic variable names */
+:root {
+  --background: #f8f7f4;
+  --foreground: #1B1B1B;
+  --card: #ffffff;
+  --card-foreground: #1B1B1B;
+  --popover: #ffffff;
+  --popover-foreground: #1B1B1B;
+  --primary: #4A70C2;
+  --primary-foreground: #ffffff;
+  --secondary: #eef3fc;
+  --secondary-foreground: #1B1B1B;
+  --muted: #f8f7f4;
+  --muted-foreground: #7a7a8a;
+  --accent: #eef3fc;
+  --accent-foreground: #1B1B1B;
+  --destructive: #FF6161;
+  --border: #e5e1db;
+  --input: #e5e1db;
+  --ring: #4A70C2;
+  --radius: 0.875rem;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-size: 16px;
+    line-height: 1.8;
+  }
+}

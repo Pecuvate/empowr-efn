@@ -16,17 +16,17 @@ Persistent project memory. Read on session start. Update at session close before
 
 ---
 
-## Phase Status (as of 2026-05-07)
+## Phase Status (as of 2026-05-08)
 
 - Phase 0 (Planning): Complete — MWP docs scaffolded, landing page specced
-- Phase 1 (Build): Not started — scaffold app, build landing page, deploy to Netlify
+- Phase 1 (Build): In progress — app scaffolded, brand configured; landing page build next
 - Phase 2 (DNS): Not started — configure Route 53 CNAME once Netlify deploy is live
 - Phase 3 (Expand): Not started — add more tool links as the EFN programme grows
 
 ## Still To Do
 
-1. Scaffold Next.js app
-2. Build landing page from `planning/specs/landing-page_spec.md`
+1. Build landing page from `planning/specs/landing-page_spec.md`
+2. Confirm LegalHub URLs for T&Cs and Privacy Policy (placeholders in `src/lib/links.ts`)
 3. Set up Netlify project and connect to GitHub repo
 4. Configure Route 53 DNS — `efn.empowrcic.org` CNAME
 5. Update Notion EFN guidebook URL to `efn.empowrcic.org` once live
