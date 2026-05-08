@@ -1,10 +1,12 @@
-# Landing Page — Spec
+# Landing Page — Spec 2 (Revised)
 
 `efn.empowrcic.org` homepage — the Empowr Freelancer Network programme hub.
 
-**Status:** Ready to build
+**Status:** Approved
 **Route:** `/` (homepage)
 **Primary CTA target:** `https://dashboard.empowrcic.org/onboard`
+
+> **What changed from spec 1:** Copy reframed around the EFN as a network delivering Empowr's programmes — self-billing demoted from a headline pillar to a detail under Simple pay. Footer updated to a 3-column brand identity layout (matches Heroes site pattern) with a Find Out More link added. All other layout, sections, components, responsive behaviour, and brand application unchanged.
 
 ---
 
@@ -26,10 +28,10 @@ It is not a sales page. It is a clear, direct introduction followed by a single 
 | Element | Content |
 |---|---|
 | Eyebrow | `Empowr Freelancer Network` |
-| Headline | `Work flexibly. Get paid simply.` |
-| Body | `The EFN connects skilled professionals with meaningful work across coaching, facilitation, and operations — without the invoicing overhead. We handle the paperwork. You focus on the work.` |
+| Headline | `Do work that matters. On your terms.` |
+| Body | `The Empowr Freelancer Network is a community of coaches, facilitators, and operations professionals delivering Empowr's programmes across the UK. Join on a flexible, shift-based basis — we handle the admin so you can focus on the work.` |
 | Primary CTA | `Join the Network` → `https://dashboard.empowrcic.org/onboard` |
-| Secondary CTA | `Learn More About EFN` → Notion page (see `links.ts`) |
+| Secondary CTA | `Learn about EFN` → Notion page (see `links.ts`) |
 | Background | `--card` (`#ffffff`) |
 
 Headline: H1, weight 900. Body: weight 400, max-width ~560px, centred. CTAs side by side on desktop, stacked on mobile. Primary: solid `--blue`. Secondary: outlined `--blue` border and text, `--blue-soft` hover bg.
@@ -42,7 +44,7 @@ Four-step flow. Horizontal on desktop, vertical on mobile.
 
 | Step | Title | Body |
 |---|---|---|
-| 1 | Complete the form | Fill in your details online — takes around 5 minutes. |
+| 1 | Complete the onboarding form | Fill in your details online — takes around 5 minutes. |
 | 2 | Sign your agreement | You'll receive a personalised Freelance Services Agreement by email. Sign it electronically. |
 | 3 | Join Sling | Once signed, you'll receive a Sling invite — our scheduling platform. Join with one click. |
 | 4 | Start working | Your manager will be in touch to schedule your first assignment. |
@@ -58,8 +60,8 @@ Three value pillars. Three-column grid on desktop, stacked on mobile.
 | Pillar | Copy |
 |---|---|
 | Flexible shifts | Take on assignments that fit your schedule — no fixed hours or minimum commitment. |
-| Self-billing | We generate invoices on your behalf once your timesheet is approved. You never need to send one. |
-| Real impact | Work that supports young people and communities across the UK. |
+| Simple pay | Once your timesheet is approved, we handle invoicing on your behalf. No chasing, no paperwork — you just get paid. |
+| Real impact | Contribute to programmes promoting life-long wellbeing through experiential learning activities to communities across the UK. |
 
 Background: `--blue-pale` (`#eef3fc`). Cards: `--card` bg, `14px` radius, `1.5px` border using `--border`.
 
@@ -95,15 +97,19 @@ Cards: `--muted` bg, `14px` radius, `--border` border, `opacity-60`. No links. 3
 
 ### 6. Footer
 
-| Element | Value |
-|---|---|
-| Copyright | `© Empowr CIC` |
-| Policy links | Terms and Conditions · Privacy Policy |
-| T&Cs | Link to Pecuvate LegalHub (confirm URL at build time) |
-| Privacy Policy | Link to Pecuvate LegalHub (confirm URL at build time) |
-| Contact | `efn@empowrcic.org` |
+3-column layout (brand identity left, grouped link sections right) — matches the Heroes site footer pattern. Collapsible on mobile.
 
-Background: `--black` (`#1B1B1B`). Text: `--muted` / white. Links: `--blue-light` on hover.
+| Column | Element | Value |
+|---|---|---|
+| Brand | Name | `Empowr Freelancer Network` |
+| Brand | Tagline | `Promoting life-long wellbeing through experiential learning activities.` |
+| Legal | Terms and Conditions | Link to Pecuvate LegalHub (confirm URL at build time) |
+| Legal | Privacy Policy | Link to Pecuvate LegalHub (confirm URL at build time) |
+| Links | Find Out More | Notion page (see `links.ts`) |
+| Links | Contact | `efn@empowrcic.org` |
+| Bottom | Copyright | `© Empowr CIC` |
+
+Background: `--black` (`#1B1B1B`). Text: `--muted` / white. Links: `--blue-light` on hover. Copyright bar below the column grid.
 
 ---
 

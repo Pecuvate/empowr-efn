@@ -19,14 +19,19 @@ Persistent project memory. Read on session start. Update at session close before
 ## Phase Status (as of 2026-05-08)
 
 - Phase 0 (Planning): Complete — MWP docs scaffolded, landing page specced
-- Phase 1 (Build): In progress — app scaffolded, brand configured; landing page build next
+- Phase 1 (Build): Complete — landing page built and reviewed; all components done
 - Phase 2 (DNS): Not started — configure Route 53 CNAME once Netlify deploy is live
 - Phase 3 (Expand): Not started — add more tool links as the EFN programme grows
 
 ## Still To Do
 
-1. Build landing page from `planning/specs/landing-page_spec.md`
-2. Confirm LegalHub URLs for T&Cs and Privacy Policy (placeholders in `src/lib/links.ts`)
-3. Set up Netlify project and connect to GitHub repo
-4. Configure Route 53 DNS — `efn.empowrcic.org` CNAME
-5. Update Notion EFN guidebook URL to `efn.empowrcic.org` once live
+1. Set up Netlify project and connect to GitHub repo
+2. Configure Route 53 DNS — `efn.empowrcic.org` CNAME
+3. Update Notion EFN guidebook URL to `efn.empowrcic.org` once live
+
+## Key Links (live in `src/lib/links.ts`)
+
+- Onboard: `https://dashboard.empowrcic.org/onboard`
+- Learn More: Notion EFN page (see `links.ts`)
+- Terms: `https://legalhub.pecuvate.com/share/empowr/empowr-efn-terms-and-conditions`
+- Privacy: `https://legalhub.pecuvate.com/share/empowr/empowr-efn-privacy-policy`

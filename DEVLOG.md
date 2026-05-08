@@ -55,8 +55,34 @@ Running log of decisions, session notes, and anything left incomplete.
 - `netlify.toml` lives in `ops/` until deploy; copy to project root when connecting Netlify
 
 **Still outstanding:**
-- [ ] Build landing page from `planning/specs/landing-page_spec.md`
-- [ ] Confirm LegalHub URLs for T&Cs and Privacy Policy (currently placeholders in `links.ts`)
+- [x] Build landing page from `planning/specs/landing-page_spec.md`
+- [x] Confirm LegalHub URLs for T&Cs and Privacy Policy (confirmed, live in `links.ts`)
+- [ ] Set up Netlify project and connect to repo
+- [ ] Configure DNS on AWS Route 53 — `efn.empowrcic.org` CNAME to Netlify domain
+- [ ] Update Notion EFN guidebook URL once live
+
+---
+
+## 2026-05-08 (session 3)
+
+**Session summary:**
+- LegalHub URLs confirmed and added to `src/lib/links.ts` (terms + privacy)
+- Landing page built in full — all six components created: `Hero`, `HowItWorks`, `ValuePillars`, `EligibilityStrip`, `ToolsHub`, `Footer`
+- `page.tsx` replaced with assembled component layout
+- Empowr logo added to Hero from S3; `next.config.ts` updated with S3 remote image pattern
+- Favicon replaced with Heroes project favicon
+- Section background order revised — Hero white, HowItWorks cream
+- `links.ts` updated with Notion `learnMore` URL
+- `planning/specs/landing-page_spec-2.md` applied — headline/body copy revised, pillar copy updated, Footer redesigned to 3-column brand layout
+- Footer: brand name + tagline column, Legal column, Links column, copyright bar below divider
+
+**Key decisions:**
+- "Join the Network" removed from Tools section (not a tool) — CTA placed in Eligibility section instead; Tools section kept as enticer only
+- "Learn More About EFN" / "Learn about EFN" CTA moved to Hero (not Eligibility) — more useful at first impression before the user has read the page
+- Coming-soon tools added to spec and ToolsHub: Timesheet Portal, My Schedule, Resource Hub
+- Footer redesigned to 3-column layout matching Heroes site pattern
+
+**Still outstanding:**
 - [ ] Set up Netlify project and connect to repo
 - [ ] Configure DNS on AWS Route 53 — `efn.empowrcic.org` CNAME to Netlify domain
 - [ ] Update Notion EFN guidebook URL once live
