@@ -19,7 +19,7 @@ Inherits from `F:\Projects\Empowr CIC\CLAUDE.md` and `F:\Projects\CLAUDE.md`. Th
 ## Constraints
 
 - Brand must match `F:\Projects\Empowr CIC\brand-identity.md` exactly — no new colours or fonts
-- Plain CSS with custom properties — no Tailwind (consistent with Heroes codebase)
+- Tailwind CSS v4 + shadcn/ui — brand tokens registered via `@theme` in `globals.css`; see `F:\Projects\_config\guides\styling.md` for the pattern
 - Primary CTA "Join the Network" links to `https://dashboard.empowrcic.org/onboard`
 - No back-end logic in this project — UI-only hub; API routes belong in the dashboard
 - Do not add features beyond what is specced in `planning/specs/` before build review

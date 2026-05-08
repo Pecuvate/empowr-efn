@@ -123,11 +123,12 @@ No top navigation on launch — the page is single-scroll. Add a sticky header w
 
 ## Brand Application
 
-- **Font:** Nunito — import via `next/font/google` in `layout.tsx` (weights 400, 600, 800, 900)
+- **Font:** Nunito — import via `next/font/google` in `layout.tsx` (weights 400, 600, 800, 900); apply via `--font-nunito` CSS variable on `<html>`
 - **Colours:** exact tokens from `F:\Projects\Empowr CIC\brand-identity.md`
-- **Implementation:** copy root CSS custom properties block from `empowr-heroes-nextjs/src/app/globals.css` into this project's `src/app/globals.css`
-- **Buttons:** `.btn-blue` class, `border-radius: 100px`, `font-weight: 800`, transition `0.2s`
-- **Shadows:** use `--shadow-blue` on CTA button; `--shadow-sm` on cards
+- **Implementation:** register brand tokens in `globals.css` using Tailwind v4's `@theme` directive so they become Tailwind utilities (`bg-blue`, `text-cream`, `bg-blue-pale`, etc.)
+- **Buttons:** use shadcn/ui `Button` component with a custom `brand` variant — `rounded-full`, `font-extrabold`, `shadow-blue`, transition `0.2s`
+- **Shadows:** define `--shadow-blue` and `--shadow-sm` in `@theme` and use via `shadow-blue`, `shadow-sm` Tailwind classes
+- **Cards:** shadcn/ui `Card` component, styled via variant or className to match brand radius (`rounded-[14px]`) and border (`border-border-b`)
 
 ---
 
