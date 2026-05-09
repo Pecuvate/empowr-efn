@@ -83,6 +83,21 @@ Running log of decisions, session notes, and anything left incomplete.
 - Footer redesigned to 3-column layout matching Heroes site pattern
 
 **Still outstanding:**
-- [ ] Set up Netlify project and connect to repo
+- [x] Set up Netlify project and connect to repo
+- [ ] Connect repo to Netlify via dashboard (manual)
+- [ ] Configure DNS on AWS Route 53 — `efn.empowrcic.org` CNAME to Netlify domain
+- [ ] Update Notion EFN guidebook URL once live
+
+---
+
+## 2026-05-09 (session 4)
+
+**Session summary:**
+- `netlify.toml` created at repo root — corrected `publish = ".next"` (relative to base `src/`, not repo root)
+- `@netlify/plugin-nextjs` installed as devDependency in `src/`
+- Production build confirmed clean — fully static output at `/` and `/_not-found`
+
+**Still outstanding:**
+- [ ] Connect repo to Netlify via dashboard (manual step)
 - [ ] Configure DNS on AWS Route 53 — `efn.empowrcic.org` CNAME to Netlify domain
 - [ ] Update Notion EFN guidebook URL once live
