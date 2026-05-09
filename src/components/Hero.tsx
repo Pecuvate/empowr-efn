@@ -33,8 +33,6 @@ export default function Hero() {
           </a>
           <a
             href={links.learnMore}
-            target="_blank"
-            rel="noopener noreferrer"
             className="inline-flex items-center justify-center rounded-full border-[1.5px] border-blue text-blue font-extrabold px-8 py-3 text-base transition-all duration-200 hover:bg-blue-soft"
           >
             Learn about EFN

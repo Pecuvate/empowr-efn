@@ -96,8 +96,24 @@ Running log of decisions, session notes, and anything left incomplete.
 - `netlify.toml` created at repo root — corrected `publish = ".next"` (relative to base `src/`, not repo root)
 - `@netlify/plugin-nextjs` installed as devDependency in `src/`
 - Production build confirmed clean — fully static output at `/` and `/_not-found`
+- Netlify site created (`empowr-efn.netlify.app`) and linked to `Pecuvate/empowr-efn` on GitHub
+- Netlify GitHub App authorised for all repos on Pecuvate account — no manual per-project step needed going forward
+- Custom domain `efn.empowrcic.org` added in Netlify; CNAME `efn → empowr-efn.netlify.app` added in Route 53
+- SSL provisioning in progress — site will be live at `https://efn.empowrcic.org` once complete
 
 **Still outstanding:**
-- [ ] Connect repo to Netlify via dashboard (manual step)
-- [ ] Configure DNS on AWS Route 53 — `efn.empowrcic.org` CNAME to Netlify domain
-- [ ] Update Notion EFN guidebook URL once live
+- [x] Update Notion EFN guidebook URL once live — replaced by /guide page (see Session 5)
+
+---
+
+## 2026-05-09 (session 5)
+
+**Session summary:**
+- `/guide` page built — 8 components: GuideHeader, AnchorNav, GuideSection, RolesTable, StepList, Callout, FAQAccordion, CTAStrip
+- shadcn Accordion installed (Base UI variant); `multiple={false}` used for single-open behaviour
+- `--color-warning` token added to globals.css for amber callout borders
+- `links.learnMore` updated from Notion URL to `/guide`; Hero and Footer updated to remove `target="_blank"` (now internal link)
+- Production build clean — `/guide` statically prerendered
+
+**Still outstanding:**
+- [ ] Commit and deploy

@@ -4,3 +4,6 @@
 # misc
 .DS_Store
 *.pem
+
+# Local Netlify folder
+.netlify

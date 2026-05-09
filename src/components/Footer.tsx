@@ -39,8 +39,6 @@ export default function Footer() {
             <p className="text-white/30 text-xs font-semibold uppercase tracking-widest">Links</p>
             <a
               href={links.learnMore}
-              target="_blank"
-              rel="noopener noreferrer"
               className="text-white/60 text-sm hover:text-blue-light transition-colors duration-200"
             >
               Find Out More
