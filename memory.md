@@ -16,22 +16,25 @@ Persistent project memory. Read on session start. Update at session close before
 
 ---
 
-## Phase Status (as of 2026-05-08)
+## Phase Status (as of 2026-05-10)
 
-- Phase 0 (Planning): Complete — MWP docs scaffolded, landing page specced
-- Phase 1 (Build): Complete — landing page built and reviewed; all components done
-- Phase 2 (DNS): Not started — configure Route 53 CNAME once Netlify deploy is live
-- Phase 3 (Expand): Not started — add more tool links as the EFN programme grows
+- Phase 0 (Planning): Complete
+- Phase 1 (Build): Complete — landing page, /guide page, mobile optimisation all done
+- Phase 2 (DNS): Complete — `efn.empowrcic.org` live on Netlify + Route 53
+- Phase 3 (Expand): Not started — add more tool links as EFN programme grows
 
 ## Still To Do
 
-1. Set up Netlify project and connect to GitHub repo
-2. Configure Route 53 DNS — `efn.empowrcic.org` CNAME
-3. Update Notion EFN guidebook URL to `efn.empowrcic.org` once live
+1. Confirm exact Sling management process with team — expand copy on home page and /guide if needed
 
 ## Key Links (live in `src/lib/links.ts`)
 
 - Onboard: `https://dashboard.empowrcic.org/onboard`
-- Learn More: Notion EFN page (see `links.ts`)
+- Learn More: `/guide` (internal)
 - Terms: `https://legalhub.pecuvate.com/share/empowr/empowr-efn-terms-and-conditions`
 - Privacy: `https://legalhub.pecuvate.com/share/empowr/empowr-efn-privacy-policy`
+
+## Terminology
+
+- "Manager" has been removed from all copy — use "admin team" throughout
+- Sling is the scheduling platform; all shift management goes through it via the admin team

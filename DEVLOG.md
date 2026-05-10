@@ -116,4 +116,24 @@ Running log of decisions, session notes, and anything left incomplete.
 - Production build clean — `/guide` statically prerendered
 
 **Still outstanding:**
-- [ ] Commit and deploy
+- [x] Commit and deploy
+
+---
+
+## 2026-05-10 (session 6)
+
+**Session summary:**
+- Mobile-first pass across landing page components: reduced vertical padding, responsive type scale, full-width CTAs on Hero, `sm:grid-cols-2` intermediate breakpoint on HowItWorks
+- EligibilityStrip bubbles made full-width on mobile (`w-full sm:w-auto`) for consistent sizing
+- AnchorNav on /guide replaced horizontal scroll with `flex-wrap justify-center` for mobile legibility
+- StepList circle reduced from `w-8 h-8` to `w-6 h-6`; alignment fine-tuned to `mt-[3px]`
+- HowItWorks step 4 (home page only): "manager" → "admin team will reach out via Sling"
+- Guide joining steps: HMRC registration note added to step 2; Xero contact record noted in step 3; step 4 updated to admin team + Sling
+- All "manager" references across guide page and FAQAccordion updated to "admin team"
+
+**Key decisions:**
+- Copy additions (HMRC, Xero) applied to /guide only — home page HowItWorks kept brief
+- "Manager" terminology removed entirely — all scheduling/management handled by admin team via Sling; Sling mentioned briefly pending full process confirmation from team
+
+**Still outstanding:**
+- [ ] Confirm exact Sling management process with team; expand copy if needed
