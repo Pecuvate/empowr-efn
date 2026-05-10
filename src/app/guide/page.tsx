@@ -22,15 +22,15 @@ const joiningSteps = [
   },
   {
     title: "Sign your Freelance Services Agreement",
-    body: "You will receive an email with your personalised agreement. Read it carefully and sign it electronically — this usually takes less than 2 minutes. The agreement covers your terms of engagement, consent to the self-billing arrangement, and confirmation that you are self-employed.",
+    body: "You will receive an email with your personalised agreement. Read it carefully and sign it electronically — this usually takes less than 2 minutes. The agreement covers your terms of engagement, consent to the self-billing arrangement, and confirmation that you are self-employed or agree that you will register with HMRC once you start earning.",
   },
   {
     title: "Your profile is set up",
-    body: "Once your agreement is signed, we will set up your profile on Sling — our scheduling platform. You will receive a welcome email with instructions on how to get started.",
+    body: "Once your agreement is signed, we will set up your profile on Sling — our scheduling platform. You will receive a welcome email with instructions on how to get started. A contact record will also be created for you in our billing system.",
   },
   {
     title: "You're ready to work",
-    body: "Once your profile is active, your manager will be in touch to schedule your first assignment.",
+    body: "Once your profile is active, our admin team will be in touch via Sling to schedule your first assignment.",
   },
 ];
 
@@ -41,7 +41,7 @@ const paymentSteps = [
   },
   {
     title: "Timesheet approval",
-    body: "Your manager reviews and approves your timesheet in Sling. Once approved, you will receive a confirmation email with a summary of hours, your agreed rate, and the total amount due.",
+    body: "The admin team reviews and approves your timesheet in Sling. Once approved, you will receive a confirmation email with a summary of hours, your agreed rate, and the total amount due.",
     callout: {
       variant: "warning" as const,
       text: "This is your chance to flag any discrepancies. Reply immediately if anything looks incorrect — once the invoice is raised it is harder to amend.",
@@ -131,7 +131,7 @@ export default function GuidePage() {
       <GuideSection id="getting-paid" bg="card">
         <h2 className="text-2xl font-black text-black mb-6">How Payment Works</h2>
         <p className="text-mid leading-relaxed mb-4">
-          Once your timesheet is approved by your manager, we generate your invoice and process
+          Once your timesheet is approved by the admin team, we generate your invoice and process
           your payment. You do not need to do anything.
         </p>
         <p className="text-mid leading-relaxed mb-10">
@@ -146,12 +146,12 @@ export default function GuidePage() {
         <h2 className="text-2xl font-black text-black mt-12 mb-6">Payment Cut-off Dates</h2>
         <p className="text-mid leading-relaxed mb-6">
           To be included in a given month&apos;s payment run, your timesheet must be approved by
-          your manager before the monthly cut-off date. Timesheets approved after cut-off roll
+          the admin team before the monthly cut-off date. Timesheets approved after cut-off roll
           into the following month.
         </p>
         <Callout variant="info">
           The cut-off is based on the approval date, not the submission date. Submit your
-          timesheet with enough time for your manager to review it before cut-off.
+          timesheet with enough time for the admin team to review it before cut-off.
         </Callout>
         <p className="text-mid leading-relaxed mt-6">
           Empowr CIC will communicate cut-off dates at the start of each month.

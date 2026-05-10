@@ -24,7 +24,7 @@ export default function ToolsHub() {
           </span>
         </div>
         <p className="text-center text-muted-foreground mb-12">
-          Your workspace as a network member. More tools are on the way.
+          Tools to support you on your Empowr Freelancer journey.
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {comingSoon.map((tool) => (

@@ -18,7 +18,7 @@ export default function StepList({ steps }: StepListProps) {
     <ol className="flex flex-col gap-6">
       {steps.map((step, index) => (
         <li key={index} className="flex gap-5">
-          <div className="flex-shrink-0 w-8 h-8 rounded-full bg-blue text-white flex items-center justify-center text-sm font-extrabold mt-0.5">
+          <div className="flex-shrink-0 w-6 h-6 rounded-full bg-blue text-white flex items-center justify-center text-xs font-extrabold mt-0.5">
             {index + 1}
           </div>
           <div className="flex flex-col gap-3 flex-1">

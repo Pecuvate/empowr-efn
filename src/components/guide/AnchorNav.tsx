@@ -30,7 +30,7 @@ export default function AnchorNav() {
 
   return (
     <nav className="sticky top-0 z-10 bg-card border-b border-border">
-      <div className="mx-auto max-w-[720px] px-6 py-3 flex gap-2 overflow-x-auto [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
+      <div className="mx-auto max-w-[720px] px-4 py-3 flex flex-wrap gap-2 justify-center">
         {navItems.map(({ label, anchor }) => (
           <a
             key={anchor}

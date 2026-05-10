@@ -18,7 +18,7 @@ UI-only project. No database, no API routes, no authentication. All functional t
 
 | Service | Purpose |
 |---|---|
-| Netlify | Hosting and continuous deployment from `main` |
+| Netlify | Hosting and continuous deployment from `main` — live at `https://efn.empowrcic.org` |
 | AWS Route 53 | DNS — `efn.empowrcic.org` CNAME to Netlify domain |
 | `dashboard.empowrcic.org` | Onboarding form target (separate project, separate deploy) |
 

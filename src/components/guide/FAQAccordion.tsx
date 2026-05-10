@@ -14,7 +14,7 @@ const faqs: { question: string; answer: React.ReactNode }[] = [
   {
     question: "Where do I log my hours?",
     answer:
-      "In Sling. Your manager will walk you through this when your profile is set up.",
+      "In Sling. The admin team will walk you through this when your profile is set up.",
   },
   {
     question: "When will I be paid?",

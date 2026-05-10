@@ -8,14 +8,14 @@ const criteria = [
 
 export default function EligibilityStrip() {
   return (
-    <section className="bg-cream py-20 px-6">
+    <section className="bg-cream py-14 md:py-20 px-5 md:px-6">
       <div className="mx-auto max-w-[880px] flex flex-col items-center gap-8 text-center">
-        <h2 className="text-3xl font-black text-black">Eligibility Requirements</h2>
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 flex-wrap">
+        <h2 className="text-2xl md:text-3xl font-black text-black">Eligibility Requirements</h2>
+        <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3 sm:gap-4 w-full sm:w-auto sm:flex-wrap">
           {criteria.map((item) => (
             <div
               key={item}
-              className="flex items-center gap-2 border border-border rounded-full px-5 py-2"
+              className="flex items-center justify-center gap-2 border border-border rounded-full px-5 py-2.5 w-full sm:w-auto"
             >
               <span className="text-blue font-black text-sm leading-none">✓</span>
               <span className="text-sm font-semibold text-black">{item}</span>
