@@ -1,0 +1,32 @@
+# Empowr Freelancer Network (EFN)
+
+> The Empowr Freelancer Network (EFN) is a managed freelancer ecosystem operated by Empowr CIC, designed to connect skilled community members with paid freelance opportunities.
+
+EFN handles onboarding, compliance verification, assignment matching, and payment processing — removing administrative burden from both clients and freelancers. It creates structured, supported pathways into self-employment for people from underrepresented backgrounds, combining professional opportunity with community mission.
+
+## For Freelancers
+
+- Guided onboarding and compliance verification
+- Matched to assignments suited to your skills
+- Supported payment processing through Empowr CIC
+
+## For Clients
+
+- Access to vetted, community-rooted freelance talent
+- Managed compliance and onboarding handled by EFN
+- Assignment coordination and accountability
+
+## Key Pages
+
+- [Home](https://efn.empowrcic.org): Overview of the Empowr Freelancer Network
+- [Join as a Freelancer](https://efn.empowrcic.org/join): Onboarding entry point for new freelancers
+- [Hire Talent](https://efn.empowrcic.org/hire): Entry point for clients seeking freelancers
+
+## About
+
+EFN is operated by Empowr CIC (empowrcic.org), a UK-based Community Interest Company.
+
+## Contact
+
+- Website: https://efn.empowrcic.org
+- Parent organisation: https://empowrcic.org

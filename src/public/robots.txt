@@ -1,0 +1,33 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /_next/
+Disallow: /dashboard/
+Disallow: /onboarding/
+Disallow: /assignments/
+
+User-agent: GPTBot
+Allow: /
+Disallow: /dashboard/
+Disallow: /onboarding/
+Disallow: /assignments/
+
+User-agent: ClaudeBot
+Allow: /
+Disallow: /dashboard/
+Disallow: /onboarding/
+Disallow: /assignments/
+
+User-agent: PerplexityBot
+Allow: /
+Disallow: /dashboard/
+Disallow: /onboarding/
+Disallow: /assignments/
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+Sitemap: https://efn.empowrcic.org/sitemap.xml
