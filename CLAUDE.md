@@ -1,7 +1,9 @@
 # empowr-efn — Claude Code Rules
 
+## Identity
 `efn.empowrcic.org` — the Empowr Freelancer Network programme hub. Lightweight Next.js site; introduces the EFN and links out to admin tools built in separate projects.
 
+## Self-Reference
 Inherits from `F:\Projects\Empowr CIC\CLAUDE.md` and `F:\Projects\CLAUDE.md`. This file is the map — workspace context lives in each folder's CONTEXT.md.
 
 ---
@@ -13,6 +15,14 @@ Inherits from `F:\Projects\Empowr CIC\CLAUDE.md` and `F:\Projects\CLAUDE.md`. Th
 | Landing page or any page build | `planning/specs/` | relevant spec in `planning/specs/` |
 | Deployment or DNS | `ops/` | `ops/CONTEXT.md` |
 | Architectural decisions | `planning/decisions/` | relevant decision record |
+
+---
+
+## Cross-Workspace Flows
+
+- **Onboarding CTA** — "Join the Network" links to `https://dashboard.empowrcic.org/onboard`; any onboarding flow changes require coordination with Empowr Dashboard
+- **Brand tokens** — source of truth is `F:\Projects\Empowr CIC\brand-identity.md`; update there first, then propagate to `src/app/globals.css`
+- **Deploy** — push to `main` → Netlify auto-deploys; no manual deploy step needed
 
 ---
 
