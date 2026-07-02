@@ -6,7 +6,7 @@ export default function Hero() {
     <section className="bg-card py-16 md:py-24 px-5 md:px-6">
       <div className="mx-auto max-w-[880px] flex flex-col items-center gap-5 md:gap-6 text-center">
         <Image
-          src="https://empowr-cic.s3.us-east-1.amazonaws.com/empowr_logo.png"
+          src="/logo.png"
           alt="Empowr"
           width={200}
           height={80}
