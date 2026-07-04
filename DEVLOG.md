@@ -4,119 +4,12 @@ Running log of decisions, session notes, and anything left incomplete.
 
 ---
 
-## 2026-05-07 (session 1)
+## 2026-07-04
 
-**Session summary:**
-- Project created at `F:\Projects\Empowr CIC\Empowr Freelancer Network\empowr-efn\`
-- Full MWP structure scaffolded: CLAUDE.md, CONTEXT.md, README.md, DEVLOG.md, memory.md, planning workspace
-- Landing page spec drafted at `planning/specs/landing-page_spec.md`
-- Brand identity doc created at `F:\Projects\Empowr CIC\brand-identity.md` — pulled from `empowr-heroes-nextjs/src/app/globals.css`
-- Empowr CIC layer CLAUDE.md created at `F:\Projects\Empowr CIC\CLAUDE.md` — Layer 0.5 for all Empowr CIC projects
-
-**Key decisions:**
-- `empowr-efn` is a UI-only hub — no API routes, no auth; all tools are separate builds linked from here
-- Plain CSS (no Tailwind) for brand consistency with Heroes
-- Primary CTA links to `https://dashboard.empowrcic.org/onboard`
-- Programme hub design: homepage is the navigation layer for the full EFN programme; tools added as links as they are built
-- Next.js (App Router) chosen for routing flexibility and future-proofing over Vite/React
-- Sling integration approach updated: BoldSign webhook triggers a Sling invite link email; freelancer self-onboards — no programmatic user creation needed
-
-**Still outstanding:**
-- [x] Scaffold Next.js app (`create-next-app`)
-- [ ] Build landing page from `planning/specs/landing-page_spec.md`
-- [ ] Set up Netlify project and connect to repo
-- [ ] Configure DNS on AWS Route 53 — `efn.empowrcic.org` CNAME to Netlify domain
-- [ ] Update Notion EFN guidebook URL once live (currently points to Notion page)
-
----
-
-## 2026-05-08 (session 2)
-
-**Session summary:**
-- Next.js 16 app scaffolded (TypeScript, App Router, Tailwind v4, ESLint)
-- shadcn/ui v4 initialised (Radix variant); Button and Card components installed
-- `globals.css` configured with brand tokens via `@theme`; shadcn semantic variables overridden with brand values in `:root`
-- Geist font removed; Nunito (weights 400, 600, 800, 900) set as `--font-sans` via `next/font/google`
-- `src/lib/links.ts` created — centralised external URLs (onboard, contact, terms, privacy)
-- `package.json` name corrected from `efn-scaffold` to `empowr-efn`
-- MWP structure corrected: all Next.js scaffold files moved into `src/` so `src/` is the framework root; `empowr-efn/` root holds only MWP context and workspace folders
-- `src/CONTEXT.md` created — describes the src workspace (structure, patterns, conventions)
-- `ops/` workspace stubbed with `CONTEXT.md` and `netlify.toml`
-- `netlify.toml` drafted in `ops/` — base dir `src`, publish `src/.next`, includes `@netlify/plugin-nextjs`
-- `tsconfig.json` path alias updated: `@/*` → `./*` (relative to `src/` root)
-- `components.json` CSS path updated: `app/globals.css` (relative to `src/` root)
-- Build and type-check pass cleanly from `src/`
-
-**Key decisions:**
-- Nunito variable set to `--font-sans` so it integrates directly with shadcn's `@theme inline` font system
-- Conflicting brand token names (`muted`, `card`, `border`) resolved by removing them from `@theme` and mapping through shadcn's `:root` with brand hex values
-- Dark mode block removed — brand is light-mode only
-- Next.js project root set to `src/` per MWP model — all npm commands run from `src/`
-- `netlify.toml` lives in `ops/` until deploy; copy to project root when connecting Netlify
-
-**Still outstanding:**
-- [x] Build landing page from `planning/specs/landing-page_spec.md`
-- [x] Confirm LegalHub URLs for T&Cs and Privacy Policy (confirmed, live in `links.ts`)
-- [ ] Set up Netlify project and connect to repo
-- [ ] Configure DNS on AWS Route 53 — `efn.empowrcic.org` CNAME to Netlify domain
-- [ ] Update Notion EFN guidebook URL once live
-
----
-
-## 2026-05-08 (session 3)
-
-**Session summary:**
-- LegalHub URLs confirmed and added to `src/lib/links.ts` (terms + privacy)
-- Landing page built in full — all six components created: `Hero`, `HowItWorks`, `ValuePillars`, `EligibilityStrip`, `ToolsHub`, `Footer`
-- `page.tsx` replaced with assembled component layout
-- Empowr logo added to Hero from S3; `next.config.ts` updated with S3 remote image pattern
-- Favicon replaced with Heroes project favicon
-- Section background order revised — Hero white, HowItWorks cream
-- `links.ts` updated with Notion `learnMore` URL
-- `planning/specs/landing-page_spec-2.md` applied — headline/body copy revised, pillar copy updated, Footer redesigned to 3-column brand layout
-- Footer: brand name + tagline column, Legal column, Links column, copyright bar below divider
-
-**Key decisions:**
-- "Join the Network" removed from Tools section (not a tool) — CTA placed in Eligibility section instead; Tools section kept as enticer only
-- "Learn More About EFN" / "Learn about EFN" CTA moved to Hero (not Eligibility) — more useful at first impression before the user has read the page
-- Coming-soon tools added to spec and ToolsHub: Timesheet Portal, My Schedule, Resource Hub
-- Footer redesigned to 3-column layout matching Heroes site pattern
-
-**Still outstanding:**
-- [x] Set up Netlify project and connect to repo
-- [ ] Connect repo to Netlify via dashboard (manual)
-- [ ] Configure DNS on AWS Route 53 — `efn.empowrcic.org` CNAME to Netlify domain
-- [ ] Update Notion EFN guidebook URL once live
-
----
-
-## 2026-05-09 (session 4)
-
-**Session summary:**
-- `netlify.toml` created at repo root — corrected `publish = ".next"` (relative to base `src/`, not repo root)
-- `@netlify/plugin-nextjs` installed as devDependency in `src/`
-- Production build confirmed clean — fully static output at `/` and `/_not-found`
-- Netlify site created (`empowr-efn.netlify.app`) and linked to `Pecuvate/empowr-efn` on GitHub
-- Netlify GitHub App authorised for all repos on Pecuvate account — no manual per-project step needed going forward
-- Custom domain `efn.empowrcic.org` added in Netlify; CNAME `efn → empowr-efn.netlify.app` added in Route 53
-- SSL provisioning in progress — site will be live at `https://efn.empowrcic.org` once complete
-
-**Still outstanding:**
-- [x] Update Notion EFN guidebook URL once live — replaced by /guide page (see Session 5)
-
----
-
-## 2026-05-09 (session 5)
-
-**Session summary:**
-- `/guide` page built — 8 components: GuideHeader, AnchorNav, GuideSection, RolesTable, StepList, Callout, FAQAccordion, CTAStrip
-- shadcn Accordion installed (Base UI variant); `multiple={false}` used for single-open behaviour
-- `--color-warning` token added to globals.css for amber callout borders
-- `links.learnMore` updated from Notion URL to `/guide`; Hero and Footer updated to remove `target="_blank"` (now internal link)
-- Production build clean — `/guide` statically prerendered
-
-**Still outstanding:**
-- [x] Commit and deploy
+- Diagnosed broken "Join the Network" CTA — root cause was dashboard migration on 2026-06-14 (EFN dashboard moved from `dashboard.empowrcic.org` to `efn-dashboard.empowrcic.org`) that was never reflected in the EFN site
+- Fixed `src/lib/links.ts`: `onboard` URL updated from `dashboard.empowrcic.org/onboard` → `efn-dashboard.empowrcic.org/onboard`
+- Updated `CLAUDE.md` and `CONTEXT.md` to reference the new domain; committed and pushed to main (Netlify auto-deployed)
+- Cloudflare Turnstile "cannot connect" on onboarding form resolved by user adding `efn-dashboard.empowrcic.org` to the Turnstile site key's allowed hostnames in Cloudflare dashboard
 
 ---
 
@@ -137,3 +30,41 @@ Running log of decisions, session notes, and anything left incomplete.
 
 **Still outstanding:**
 - [ ] Confirm exact Sling management process with team; expand copy if needed
+
+---
+
+## 2026-05-09 (session 5)
+
+**Session summary:**
+- `/guide` page built — 8 components: GuideHeader, AnchorNav, GuideSection, RolesTable, StepList, Callout, FAQAccordion, CTAStrip
+- shadcn Accordion installed (Base UI variant); `multiple={false}` used for single-open behaviour
+- `--color-warning` token added to globals.css for amber callout borders
+- `links.learnMore` updated from Notion URL to `/guide`; Hero and Footer updated to remove `target="_blank"` (now internal link)
+- Production build clean — `/guide` statically prerendered
+
+**Still outstanding:**
+- [x] Commit and deploy
+
+---
+
+## 2026-05-09 (session 4)
+
+**Session summary:**
+- `netlify.toml` created at repo root — corrected `publish = ".next"` (relative to base `src/`, not repo root)
+- `@netlify/plugin-nextjs` installed as devDependency in `src/`
+- Production build confirmed clean — fully static output at `/` and `/_not-found`
+- Netlify site created (`empowr-efn.netlify.app`) and linked to `Pecuvate/empowr-efn` on GitHub
+- Netlify GitHub App authorised for all repos on Pecuvate account — no manual per-project step needed going forward
+- Custom domain `efn.empowrcic.org` added in Netlify; CNAME `efn → empowr-efn.netlify.app` added in Route 53
+- SSL provisioning in progress — site will be live at `https://efn.empowrcic.org` once complete
+
+**Still outstanding:**
+- [x] Update Notion EFN guidebook URL once live — replaced by /guide page (see Session 5)
+
+---
+
+## 2026-05-08 (session 3) — Landing page built in full (Hero, HowItWorks, ValuePillars, EligibilityStrip, ToolsHub, Footer); CTA placement and Footer redesigned per spec-2
+
+## 2026-05-08 (session 2) — Next.js 16 + Tailwind v4 + shadcn/ui scaffolded; globals.css brand tokens configured; links.ts created; src/ MWP layout established
+
+## 2026-05-07 (session 1) — MWP structure scaffolded; landing page spec drafted; brand identity doc and Empowr CIC layer CLAUDE.md created
