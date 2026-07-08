@@ -10,6 +10,7 @@ const nunito = Nunito({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://efn.empowrcic.org"),
   title: "Empowr Freelancer Network",
   description:
     "The EFN connects skilled professionals with meaningful work — without the invoicing overhead.",
@@ -22,6 +23,23 @@ export const metadata: Metadata = {
     apple: { url: "/apple-touch-icon.png" },
   },
   manifest: "/site.webmanifest",
+  openGraph: {
+    title: "Empowr Freelancer Network",
+    description:
+      "The EFN connects skilled professionals with meaningful work — without the invoicing overhead.",
+    url: "https://efn.empowrcic.org",
+    siteName: "Empowr Freelancer Network",
+    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
+    locale: "en_GB",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Empowr Freelancer Network",
+    description:
+      "The EFN connects skilled professionals with meaningful work — without the invoicing overhead.",
+    images: ["/og-image.png"],
+  },
 };
 
 const jsonLd = [
