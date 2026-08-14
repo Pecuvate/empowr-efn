@@ -68,3 +68,16 @@ Do NOT load unless the task requires it:
 | CSS files | kebab-case, `.css` |
 | Script files | kebab-case, `.mjs` |
 | Spec files | `{feature-name}_spec.md` |
+
+---
+
+## Skills and Tools Available
+
+| Tool / Skill | Trigger | Purpose |
+|---|---|---|
+| `/netlify-deploy` | going live or redeploying | Deploy to Netlify and configure `efn.empowrcic.org` |
+| `/netlify-supabase-check` | before any deploy | Pre-deploy audit — Netlify + Supabase integration |
+| `/pre-build-check` | before any deploy | Validate build structure and frontend quality |
+| `/pre-deploy-security` | before any deploy | FAILs block the deploy |
+| `/webapp-testing` | after frontend changes | Test UI with Playwright |
+| `/simplify` | after a feature is built | Review changed code for reuse, quality, and efficiency |
