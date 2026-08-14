@@ -4,6 +4,12 @@ Running log of decisions, session notes, and anything left incomplete.
 
 ---
 
+## 2026-08-14
+
+- Added a `## Skills and Tools Available` section to `CLAUDE.md`, closing a scheduled mwp-health M8 finding — README.md already existed and needed no changes
+
+---
+
 ## 2026-07-04
 
 - Diagnosed broken "Join the Network" CTA — root cause was dashboard migration on 2026-06-14 (EFN dashboard moved from `dashboard.empowrcic.org` to `efn-dashboard.empowrcic.org`) that was never reflected in the EFN site
@@ -47,21 +53,7 @@ Running log of decisions, session notes, and anything left incomplete.
 
 ---
 
-## 2026-05-09 (session 4)
-
-**Session summary:**
-- `netlify.toml` created at repo root — corrected `publish = ".next"` (relative to base `src/`, not repo root)
-- `@netlify/plugin-nextjs` installed as devDependency in `src/`
-- Production build confirmed clean — fully static output at `/` and `/_not-found`
-- Netlify site created (`empowr-efn.netlify.app`) and linked to `Pecuvate/empowr-efn` on GitHub
-- Netlify GitHub App authorised for all repos on Pecuvate account — no manual per-project step needed going forward
-- Custom domain `efn.empowrcic.org` added in Netlify; CNAME `efn → empowr-efn.netlify.app` added in Route 53
-- SSL provisioning in progress — site will be live at `https://efn.empowrcic.org` once complete
-
-**Still outstanding:**
-- [x] Update Notion EFN guidebook URL once live — replaced by /guide page (see Session 5)
-
----
+## 2026-05-09 — Netlify site created and linked (empowr-efn.netlify.app), custom domain efn.empowrcic.org added via Route 53, netlify.toml + plugin-nextjs configured, production build verified clean
 
 ## 2026-05-08 (session 3) — Landing page built in full (Hero, HowItWorks, ValuePillars, EligibilityStrip, ToolsHub, Footer); CTA placement and Footer redesigned per spec-2
 
