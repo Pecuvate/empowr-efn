@@ -29,7 +29,7 @@ Persistent project memory. Read on session start. Update at session close before
 
 ## Key Links (live in `src/lib/links.ts`)
 
-- Onboard: `https://dashboard.empowrcic.org/onboard`
+- Onboard: `https://efn-dashboard.empowrcic.org/onboard` — **`dashboard.empowrcic.org` is DEAD** (does not resolve) since the 2026-06-14 dashboard migration. `links.ts` was corrected on 2026-07-04; this file still named the dead host until 2026-09-03.
 - Learn More: `/guide` (internal)
 - Terms: `https://legalhub.pecuvate.com/share/empowr/empowr-efn-terms-and-conditions`
 - Privacy: `https://legalhub.pecuvate.com/share/empowr/empowr-efn-privacy-policy`
