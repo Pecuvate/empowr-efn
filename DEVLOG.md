@@ -4,6 +4,11 @@ Running log of decisions, session notes, and anything left incomplete.
 
 ---
 
+## 2026-09-04 - Stranded close-out PR merged once the branch was unblocked
+
+- PR #1 (`docs/closeout-2026-09-03`) had been open and unmergeable since 09-03 09:04 - no conflict, but the repo ruleset's `update` rule was blocking every merge. Merged after the rule was replaced with `pull_request`
+- Reconciled at close-out: the local branch was rebased onto the merged PR. `DEVLOG.md` conflicted (both sides had added a top entry) and both were kept
+
 ## 2026-09-03
 
 - **Pushed two commits that had been sitting unpushed since 2026-08-14** (`29ecec2` CLAUDE.md M8 section, `f347899` DEVLOG close-out). Docs-only, no deploy impact — but they had been stranded for 17 days, the same pattern recorded in [[feedback_commits_stranded_unpushed]].
