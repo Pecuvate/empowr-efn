@@ -25,7 +25,7 @@ It is deliberately **UI-only** — no database, no API routes, no authentication
 - **Live URL:** [efn.empowrcic.org](https://efn.empowrcic.org)
 - **Stack:** Next.js 16 + TypeScript + Tailwind CSS v4 + shadcn/ui
 - **Hosting:** Netlify (auto-deploy on push to `main`)
-- **Repo:** `Pecuvate/empowr-efn` (GitHub, private)
+- **Repo:** `PecuvateOrg/empowr-efn` (GitHub, public)
 - **DNS:** Route 53 CNAME `efn → empowr-efn.netlify.app`
 
 ---
