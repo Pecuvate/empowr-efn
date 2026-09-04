@@ -4,6 +4,11 @@ Running log of decisions, session notes, and anything left incomplete.
 
 ---
 
+## 2026-09-03
+
+- **Pushed two commits that had been sitting unpushed since 2026-08-14** (`29ecec2` CLAUDE.md M8 section, `f347899` DEVLOG close-out). Docs-only, no deploy impact — but they had been stranded for 17 days, the same pattern recorded in [[feedback_commits_stranded_unpushed]].
+- No code changes in this repo this session; the work was in `Freelancer-Workflow/`.
+
 ## 2026-08-14
 
 - Added a `## Skills and Tools Available` section to `CLAUDE.md`, closing a scheduled mwp-health M8 finding — README.md already existed and needed no changes
@@ -39,17 +44,7 @@ Running log of decisions, session notes, and anything left incomplete.
 
 ---
 
-## 2026-05-09 (session 5)
-
-**Session summary:**
-- `/guide` page built — 8 components: GuideHeader, AnchorNav, GuideSection, RolesTable, StepList, Callout, FAQAccordion, CTAStrip
-- shadcn Accordion installed (Base UI variant); `multiple={false}` used for single-open behaviour
-- `--color-warning` token added to globals.css for amber callout borders
-- `links.learnMore` updated from Notion URL to `/guide`; Hero and Footer updated to remove `target="_blank"` (now internal link)
-- Production build clean — `/guide` statically prerendered
-
-**Still outstanding:**
-- [x] Commit and deploy
+## 2026-05-09 (session 5) — `/guide` page built (8 components incl. AnchorNav, RolesTable, FAQAccordion); shadcn Accordion added; `--color-warning` token; `links.learnMore` repointed from Notion to `/guide`; build clean
 
 ---
 
