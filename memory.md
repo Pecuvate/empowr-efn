@@ -1,6 +1,10 @@
 # Memory — empowr-efn
 
+**2026-09-04 — PR #1 merged; local checkout deliberately left behind.** The close-out PR had been unmergeable since 09-03 09:04 — not a conflict, but the ruleset's `update` rule blocking every merge. **The local repo is 1 commit behind with `memory.md` modified locally *and* changed by that PR**, plus local edits to `docs/CONTEXT.md` and `docs/system-flow.md`. Pulling will collide. Reconcile manually before doing anything else here.
+
 Persistent project memory. Read on session start. Update at session close before committing.
+
+**GitHub state (2026-09-03):** the repository is public at `PecuvateOrg/empowr-efn`; production remains `main` with Netlify auto-deploy.
 
 ---
 
