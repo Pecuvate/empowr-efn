@@ -103,7 +103,7 @@ To update any link, edit `src/lib/links.ts` and redeploy. Never hardcode URLs in
 | **Sling** | Scheduling platform — mentioned in guide copy, not embedded | Reference only |
 | **AWS S3** | Empowr logo (`empowr-cic.s3.us-east-1.amazonaws.com`) | Remote image pattern |
 | **Netlify** | Hosting — auto-deploy on push to main | Infrastructure |
-| **GitHub** (`Pecuvate/empowr-efn`) | Source — Netlify pulls on push | Infrastructure |
+| **GitHub** (`PecuvateOrg/empowr-efn`) | Source — Netlify pulls on push | Infrastructure |
 | **Route 53** | DNS — CNAME to Netlify | Infrastructure |
 | **efn@empowrcic.org** | Contact email — mailto link in footer | Outbound link |
 
@@ -119,7 +119,7 @@ Local change
     git push origin main
     │
     ▼
-GitHub (Pecuvate/empowr-efn)
+GitHub (PecuvateOrg/empowr-efn)
     │  triggers Netlify build hook
     ▼
 Netlify build runner
